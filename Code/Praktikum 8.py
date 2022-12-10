@@ -22,16 +22,15 @@ def add():
     DataMhs.append(Mhs)
 
 def show():
+    print("\n")
+    print("      DAFTAR NILAI MAHASISWA")
     if len(DataMhs) <= 0:
-        print("\n")
-        print("      DAFTAR NILAI MAHASISWA")
         print("=================================")
         print("         TIDAK ADA DATA")
-    
+        print("\n")
+        print("=================================")
     else:
         for Mhs in DataMhs:
-            print("\n")
-            print("      DAFTAR NILAI MAHASISWA")
             print("=================================")
             print("Nama        : {} ".format(Mhs.nama))
             print("NIM         : {} ".format(Mhs.nim))
@@ -39,14 +38,15 @@ def show():
             print("Nilai UTS   : {} ".format(Mhs.uts))
             print("Nilai UAS   : {} ".format(Mhs.uas))
             print("Nilai Akhir : {:.1f} ".format(Mhs.akhir))
+            print("=================================")
 
 def delete():
     print("HAPUS DATA")
     nama = Mahasiswa()
     nama = input("Nama : ")
-    for a in DataMhs:
-        if nama == a.nama:
-            DataMhs.remove(a)
+    for data in DataMhs:
+        if nama == data.nama:
+            DataMhs.remove(data)
 
             print("Berhasil Dihapus")
     
@@ -59,12 +59,14 @@ def update():
     nama = input("Nama : ")
     print("\n")
 
-    for a in DataMhs:
-        if nama == a.nama:
-            a.tugas = int(input("Nilai Tugas : "))
-            a.uts = int(input("Nilai UTS   : "))
-            a.uas = int(input("Nilai UAS   : "))
-            a.akhir = (a.tugas * 30/100) + (a.uts * 35/100) + (a.uas * 35/100)
+    for data in DataMhs:
+        if nama == data.nama:
+            data.tugas = int(input("Nilai Tugas : "))
+            data.uts = int(input("Nilai UTS   : "))
+            data.uas = int(input("Nilai UAS   : "))
+            data.akhir = (a.tugas * 30/100) + (a.uts * 35/100) + (a.uas * 35/100)
+
+            print("DATA BERHASIL DIUBAH")
 
         else:
             print("DATA TIDAK DITEMUKAN")
