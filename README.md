@@ -1,4 +1,7 @@
 # Praktikum 8
+## Membuat data nilai dengan OOP
+
+### Code
 
 Pertama deklarasi class nya terlebih dahulu
 
@@ -158,10 +161,10 @@ Data akan terhapus
 
 ![Img.png](Img/Img7.png)
 
-# Diagram Flowchart
+## Diagram Flowchart
 
 ![Flowchart.png](Img/Flowchart.png)
 
-# Diagram Class
+## Diagram Class
 
 ![Class.png](Img/Class.png)
