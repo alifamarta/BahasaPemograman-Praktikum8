@@ -1,3 +1,5 @@
+from os import system
+
 class Mahasiswa:
     nama = ""
     nim = ""
@@ -9,6 +11,7 @@ class Mahasiswa:
 DataMhs = []
 
 def add():
+    system("cls")
     Mhs = Mahasiswa()
     print("TAMBAH DATA")
 
@@ -22,7 +25,7 @@ def add():
     DataMhs.append(Mhs)
 
 def show():
-    print("\n")
+    system("cls")
     print("      DAFTAR NILAI MAHASISWA")
     if len(DataMhs) <= 0:
         print("=================================")
@@ -41,6 +44,7 @@ def show():
             print("=================================")
 
 def delete():
+    system("cls")
     print("HAPUS DATA")
     nama = Mahasiswa()
     nama = input("Nama : ")
@@ -54,6 +58,7 @@ def delete():
             print("DATA TIDAK DITEMUKAN")
 
 def update():
+    system("cls")
     print("UBAH DATA")
     nama = Mahasiswa()
     nama = input("Nama : ")
@@ -64,7 +69,7 @@ def update():
             data.tugas = int(input("Nilai Tugas : "))
             data.uts = int(input("Nilai UTS   : "))
             data.uas = int(input("Nilai UAS   : "))
-            data.akhir = (a.tugas * 30/100) + (a.uts * 35/100) + (a.uas * 35/100)
+            data.akhir = (data.tugas * 30/100) + (data.uts * 35/100) + (data.uas * 35/100)
 
             print("DATA BERHASIL DIUBAH")
 
@@ -102,3 +107,6 @@ while True:
         print("thank you for using the code :) ")
 
         exit()
+
+    else:
+        print("KELEBIHAN !!!!!!!!!!!!!!!!")

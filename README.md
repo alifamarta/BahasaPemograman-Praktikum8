@@ -128,3 +128,40 @@ while True:
         exit()
 ```
 
+### Output
+
+- Menu 
+
+![img.png](Img\Img1.png)
+
+- Lihat Data sebelum ditambahkan
+
+![img.png](Img/Img2.png)
+
+- Tambah Data
+
+![img.png](Img/Img3.png)
+
+- Lihat Data setelah Ditambahkan
+
+![img.png](Img/Img4.png)
+
+- Ubah Data 
+
+![Img.png](Img/Img5.png)
+
+- Hapus Data
+
+![!Img.png](Img/Img6.png)
+
+Data akan terhapus
+
+![Img.png](Img/Img7.png)
+
+# Diagram Flowchart
+
+![Flowchart.png](Img/Flowchart.png)
+
+# Diagram Class
+
+![Class.png](Img/Class.png)
