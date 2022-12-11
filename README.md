@@ -135,7 +135,7 @@ while True:
 
 - Menu 
 
-![img.png](Img\Img1.png)
+![img.png](Img/Img1.png)
 
 - Lihat Data sebelum ditambahkan
 
